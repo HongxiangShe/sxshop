@@ -4,3 +4,4 @@ passlib
 grpcio
 grpcio-tools
 protobuf
+loguru
