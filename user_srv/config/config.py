@@ -3,7 +3,8 @@ from playhouse.shortcuts import ReconnectMixin
 
 
 class ReconnectMysqlDatabase(ReconnectMixin, PooledMySQLDatabase):
-    pass
+    def sequence_exists(self, seq):
+        pass
 
 
 MYSQL_DB = 'sxshop_user_srv'
