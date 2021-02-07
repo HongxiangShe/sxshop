@@ -22,9 +22,18 @@ class UserTest:
             mobile=mobile,
             password=password))
 
+    def update_user(self, id, nickName, address):
+        self.stub.UpdateUser(user_pb2.UpdateUserRequest(
+            id=id,
+            nickName=nickName,
+            address=address
+        ))
+
 
 if __name__ == '__main__':
     test = UserTest()
     # test.user_list()
     # test.get_user_by_id(3)
-    test.add_user(nickName='Scott.She', mobile='18702195000', password='123456')
+    # user = test.add_user(nickName='Scott.She', mobile='18702195000', password='123456')
+    # print(user.id)
+    test.update_user(id=6, nickName='Alina.Liu', address='金殿苑1栋')

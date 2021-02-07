@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z\007.;proto',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\nuser.proto\x1a\x1bgoogle/protobuf/empty.proto\"-\n\x0fPageInfoRequest\x12\x0c\n\x04page\x18\x01 \x01(\r\x12\x0c\n\x04size\x18\x02 \x01(\r\"\x1f\n\rMobileRequest\x12\x0e\n\x06mobile\x18\x01 \x01(\t\"\x17\n\tIdRequest\x12\n\n\x02id\x18\x01 \x01(\x03\"G\n\x11\x43reateUserRequest\x12\x10\n\x08nickName\x18\x01 \x01(\t\x12\x10\n\x08password\x18\x02 \x01(\t\x12\x0e\n\x06mobile\x18\x03 \x01(\t\"S\n\x11UpdateUserRequest\x12\n\n\x02id\x18\x01 \x01(\x03\x12\x10\n\x08nickName\x18\x02 \x01(\t\x12\x0e\n\x06gender\x18\x03 \x01(\r\x12\x10\n\x08\x62irthday\x18\x04 \x01(\x04\"\x82\x01\n\x10UserInfoResponse\x12\n\n\x02id\x18\x01 \x01(\x03\x12\x0e\n\x06mobile\x18\x02 \x01(\t\x12\x10\n\x08password\x18\x03 \x01(\t\x12\x10\n\x08nickName\x18\x04 \x01(\t\x12\x0e\n\x06gender\x18\x05 \x01(\x05\x12\x10\n\x08\x62irthday\x18\x06 \x01(\x04\x12\x0c\n\x04role\x18\x07 \x01(\x05\"3\n\x10UserListResponse\x12\x1f\n\x04\x64\x61ta\x18\x02 \x03(\x0b\x32\x11.UserInfoResponse2\x8d\x02\n\x04User\x12\x32\n\x0bGetUserList\x12\x10.PageInfoRequest\x1a\x11.UserListResponse\x12\x34\n\x0fGetUserByMobile\x12\x0e.MobileRequest\x1a\x11.UserInfoResponse\x12,\n\x0bGetUserById\x12\n.IdRequest\x1a\x11.UserInfoResponse\x12\x33\n\nCreateUser\x12\x12.CreateUserRequest\x1a\x11.UserInfoResponse\x12\x38\n\nUpdateUser\x12\x12.UpdateUserRequest\x1a\x16.google.protobuf.EmptyB\tZ\x07.;protob\x06proto3'
+  serialized_pb=b'\n\nuser.proto\x1a\x1bgoogle/protobuf/empty.proto\"-\n\x0fPageInfoRequest\x12\x0c\n\x04page\x18\x01 \x01(\r\x12\x0c\n\x04size\x18\x02 \x01(\r\"\x1f\n\rMobileRequest\x12\x0e\n\x06mobile\x18\x01 \x01(\t\"\x17\n\tIdRequest\x12\n\n\x02id\x18\x01 \x01(\x03\"G\n\x11\x43reateUserRequest\x12\x10\n\x08nickName\x18\x01 \x01(\t\x12\x10\n\x08password\x18\x02 \x01(\t\x12\x0e\n\x06mobile\x18\x03 \x01(\t\"\x91\x01\n\x11UpdateUserRequest\x12\n\n\x02id\x18\x01 \x01(\x03\x12\x10\n\x08nickName\x18\x02 \x01(\t\x12\x0e\n\x06gender\x18\x03 \x01(\r\x12\x10\n\x08\x62irthday\x18\x04 \x01(\x04\x12\x0f\n\x07headUrl\x18\x05 \x01(\t\x12\x0f\n\x07\x61\x64\x64ress\x18\x06 \x01(\t\x12\x0c\n\x04role\x18\x07 \x01(\t\x12\x0c\n\x04\x64\x65sc\x18\x08 \x01(\t\"\xb2\x01\n\x10UserInfoResponse\x12\n\n\x02id\x18\x01 \x01(\x03\x12\x0e\n\x06mobile\x18\x02 \x01(\t\x12\x10\n\x08password\x18\x03 \x01(\t\x12\x10\n\x08nickName\x18\x04 \x01(\t\x12\x0e\n\x06gender\x18\x05 \x01(\x05\x12\x10\n\x08\x62irthday\x18\x06 \x01(\x04\x12\x0c\n\x04role\x18\x07 \x01(\x05\x12\x0f\n\x07headUrl\x18\x08 \x01(\t\x12\x0f\n\x07\x61\x64\x64ress\x18\t \x01(\t\x12\x0c\n\x04\x64\x65sc\x18\n \x01(\t\"3\n\x10UserListResponse\x12\x1f\n\x04\x64\x61ta\x18\x02 \x03(\x0b\x32\x11.UserInfoResponse2\x8d\x02\n\x04User\x12\x32\n\x0bGetUserList\x12\x10.PageInfoRequest\x1a\x11.UserListResponse\x12\x34\n\x0fGetUserByMobile\x12\x0e.MobileRequest\x1a\x11.UserInfoResponse\x12,\n\x0bGetUserById\x12\n.IdRequest\x1a\x11.UserInfoResponse\x12\x33\n\nCreateUser\x12\x12.CreateUserRequest\x1a\x11.UserInfoResponse\x12\x38\n\nUpdateUser\x12\x12.UpdateUserRequest\x1a\x16.google.protobuf.EmptyB\tZ\x07.;protob\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_empty__pb2.DESCRIPTOR,])
 
@@ -212,6 +212,34 @@ _UPDATEUSERREQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='headUrl', full_name='UpdateUserRequest.headUrl', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='address', full_name='UpdateUserRequest.address', index=5,
+      number=6, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='role', full_name='UpdateUserRequest.role', index=6,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='desc', full_name='UpdateUserRequest.desc', index=7,
+      number=8, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -224,8 +252,8 @@ _UPDATEUSERREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=221,
-  serialized_end=304,
+  serialized_start=222,
+  serialized_end=367,
 )
 
 
@@ -286,6 +314,27 @@ _USERINFORESPONSE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='headUrl', full_name='UserInfoResponse.headUrl', index=7,
+      number=8, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='address', full_name='UserInfoResponse.address', index=8,
+      number=9, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='desc', full_name='UserInfoResponse.desc', index=9,
+      number=10, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -298,8 +347,8 @@ _USERINFORESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=307,
-  serialized_end=437,
+  serialized_start=370,
+  serialized_end=548,
 )
 
 
@@ -330,8 +379,8 @@ _USERLISTRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=439,
-  serialized_end=490,
+  serialized_start=550,
+  serialized_end=601,
 )
 
 _USERLISTRESPONSE.fields_by_name['data'].message_type = _USERINFORESPONSE
@@ -403,8 +452,8 @@ _USER = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=493,
-  serialized_end=762,
+  serialized_start=604,
+  serialized_end=873,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetUserList',

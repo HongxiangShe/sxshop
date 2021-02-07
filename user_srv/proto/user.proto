@@ -34,6 +34,10 @@ message UpdateUserRequest {
   string nickName = 2;
   uint32 gender = 3;
   uint64 birthday = 4;
+  string headUrl = 5;
+  string address = 6;
+  string role= 7;
+  string desc = 8;
 }
 
 message UserInfoResponse {
@@ -44,6 +48,9 @@ message UserInfoResponse {
   int32 gender = 5;
   uint64 birthday = 6;
   int32 role = 7;
+  string headUrl = 8;
+  string address = 9;
+  string desc = 10;
 
 }
 

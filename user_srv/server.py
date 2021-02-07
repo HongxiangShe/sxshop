@@ -6,6 +6,7 @@ import argparse
 from concurrent import futures
 from loguru import logger
 
+# 通过server运行需要知道项目根目录
 BASE_DIR = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 sys.path.insert(0, BASE_DIR)
 
